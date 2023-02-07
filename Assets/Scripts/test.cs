@@ -7,7 +7,7 @@ public class test : MonoBehaviour
 {
     public char[][] field;
     public int size = 5;
-    public GameObject towerNodes;
+    public GameObject PathNodes;
     public GameObject TIlePrefab;
     public GameObject PathPrefab;
 
@@ -36,8 +36,9 @@ public class test : MonoBehaviour
             for (int y = 0; y < field[i].Length; y++)
             {
                 GameObject current = field[i][y] == 't' ? TIlePrefab : PathPrefab;
-                GameObject tile = Instantiate(current, new Vector3(y * 5, 0, i * -5), Quaternion.identity);;
-                tile.transform.parent = transform;
+                GameObject tile = Instantiate(current, new Vector3(y * size * (float)1.5, 0, i * size * (float)-1.5), Quaternion.identity);
+                tile.transform.localScale = new Vector3(size, (float)size/4, size);
+                tile.transform.parent = field[i][y] == 't' ? transform : PathNodes.transform; 
             }
         }
     }
