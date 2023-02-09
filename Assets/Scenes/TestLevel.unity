@@ -376,8 +376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11899e77eb572704ab73f812b80fde50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 5
-  towerNodes: {fileID: 2119467616}
+  size: 2
+  PathNodes: {fileID: 1394195236}
   TIlePrefab: {fileID: 6678469351685576152, guid: 7cd6e5631bbdc4d48b22549c04001002, type: 3}
   PathPrefab: {fileID: 6520218252654350501, guid: de7dd95779d08cc4085b0fc569d85a1d, type: 3}
   fields:
