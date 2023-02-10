@@ -65,11 +65,8 @@ public class test : MonoBehaviour
         GameObject previous = null;
         foreach(KeyValuePair<int, GameObject> path in paths.OrderBy(x => x.Key))
         {
-            Debug.Log(path.Value.name);
-            Debug.Log("prev: " + previous);
             if (previous != null)
             {
-                Debug.Log("prev: " + previous.name);
                 previous.GetComponent<Path>().next = path.Value;
             }
             previous = path.Value;
