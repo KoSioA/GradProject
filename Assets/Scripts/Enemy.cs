@@ -17,6 +17,10 @@ public class Enemy : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        if(this.health <= 0)
+        {
+            Destroy(this);
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
