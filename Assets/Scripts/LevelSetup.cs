@@ -53,7 +53,7 @@ public class LevelSetup : MonoBehaviour
                 int position;
                 if (path[i][y] != "t" && int.TryParse(path[i][y], out position))
                 {
-                    GameObject waypoint = Instantiate(WaypointPrefab, new Vector3(y * size * (float)1.5, size * 0.75f, i * size * (float)-1.5), Quaternion.identity);
+                    GameObject waypoint = Instantiate(WaypointPrefab, new Vector3(y * size * (float)1.5, size * 0.25f + 0.7f, i * size * (float)-1.5), Quaternion.identity);
                     waypoint.name = position.ToString();
                     waypoint.transform.parent = Waypoints.transform;
                     paths.Add(position, waypoint);

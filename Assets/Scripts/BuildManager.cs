@@ -13,10 +13,15 @@ public class BuildManager : MonoBehaviour
 
     private GameObject selectedTurret;
     public GameObject normalTurret;
+    public GameObject fastTurret;
 
     private void Start()
     {
         selectedTurret = normalTurret;
+    }
+    public void changeTurret(GameObject turret)
+    {
+        selectedTurret = turret;
     }
     public GameObject GetSelectedTurret()
     {
