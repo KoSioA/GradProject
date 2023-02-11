@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20acc6b53aa51b54babc0efb5b70f7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalTurret: {fileID: 1821653913607345276, guid: bf50d35ff8379c541b78aa9481c6f361, type: 3}
+  normalTurret: {fileID: 1411784688039996819, guid: bf50d35ff8379c541b78aa9481c6f361, type: 3}
 --- !u!4 &110534290
 Transform:
   m_ObjectHideFlags: 0
@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 2045860925}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

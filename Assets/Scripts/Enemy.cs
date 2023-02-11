@@ -4,36 +4,35 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    double health = 10;
+    double health = 3;
     public float speed = 0.2f;
     public GameObject target;
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
-        
+        target = GameObject.Find("GameMaster").GetComponent<LevelSetup>().firstNode;
+    }
+    void Update()
+    {
+        Debug.Log("Updating?");
+        Vector3 dir = target.transform.position - this.transform.position;
+        this.transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+        if(Vector3.Distance(this.transform.position, target.transform.position) < 0.2f)
+        {
+            target = target.GetComponent<Waypoint>().next;
+            if(target == null)
+            {
+                Destroy(this.gameObject);
+            }
+        }
     }
 
-    // Update is called once per frame
-    private void FixedUpdate()
+    public void TakeDamage(float damage)
     {
-        Move();
+        this.health -= damage;
         if(this.health <= 0)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("collided");
-        Debug.Log(collision.transform.gameObject == target);
-        Debug.Log(collision.transform.gameObject.name);
-        if(collision.transform.gameObject == target)
-        {
-            target = target.GetComponent<Path>().next;
-        }
-    }
-    void Move()
-    {
-        this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(target.transform.position.x, this.transform.position.y, target.transform.position.z), speed);
     }
 }
