@@ -39,4 +39,8 @@ public class Ui : MonoBehaviour
     {
         bm.changeTurret(bm.fastTurret);
     }
+    public void selectSomeTurret(int i)
+    {
+        bm.changeTurret(bm.fastTurret);
+    }
 }

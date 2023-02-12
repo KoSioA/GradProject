@@ -22,7 +22,9 @@ public class Enemy : MonoBehaviour
             target = target.GetComponent<Waypoint>().next;
             if(target == null)
             {
+                Player.instance.TakeDamage(10);
                 Destroy(this.gameObject);
+                return;
             }
         }
     }
