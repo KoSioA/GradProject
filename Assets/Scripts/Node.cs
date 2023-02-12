@@ -34,17 +34,34 @@ public class Node : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(turret != null)
+        if(turret != null || BuildManager.instance.GetSelectedTurret() == null)
         {
             return;
         }
-        GameObject selectedTurret = BuildManager.instance.GetSelectedTurret();
-        turret = Instantiate(selectedTurret, transform.position + turretOffset, transform.rotation);
+        TowerItem selectedTurret = BuildManager.instance.GetSelectedTurret();
+        GameObject newTurret = ToGameObject(selectedTurret, transform.position + turretOffset, transform.rotation);
+        turret = newTurret;
+        BuildManager.instance.removeTurret();
     }
 
-    // Update is called once per frame
-    void Update()
+    private GameObject ToGameObject(TowerItem tower, Vector3 position, Quaternion rotation)
     {
-        
+        Debug.Log("Converting to game Object");
+        GameObject turretPrefab = null;
+        switch (tower.towerType)
+        {
+            case "normal":
+                turretPrefab = BuildManager.instance.normalTurret;
+                break;
+            case "fast":
+                turretPrefab = BuildManager.instance.fastTurret;
+                break;
+        }
+        GameObject newTurret = Instantiate(turretPrefab, position, rotation);
+        Debug.Log(newTurret.GetComponent<Turret>().damage);
+        newTurret.GetComponent<Turret>().damage = tower.damage;
+        Debug.Log(newTurret.GetComponent<Turret>().damage);
+        newTurret.GetComponent<Turret>().fireRate = tower.fireRate;
+        return newTurret;
     }
 }

@@ -8,14 +8,33 @@ public class Player : MonoBehaviour
 
     public int health = 100;
     public int maxHealth = 100;
-    GameObject[] inventory;
+    public IItem[] inventory;
+    public List<TowerItem> towers;
+    public int money = 0;
 
     private void Awake()
     {
         instance = this;
+        towers = new List<TowerItem> { new TowerItem(1, "normal", 1f, 1f), 
+            new TowerItem(1, "fast", 1f, 10f), 
+            new TowerItem(2, "normal", 1f, 1f),
+            new TowerItem(1, "fast", 1f, 10f),
+            new TowerItem(1, "fast", 1f, 10f),
+            new TowerItem(1, "fast", 1f, 10f),
+            new TowerItem(1, "fast", 1f, 10f),
+            new TowerItem(1, "fast", 1f, 10f),
+            new TowerItem(1, "fast", 1f, 10f),
+            new TowerItem(1, "fast", 1f, 10f),
+            new TowerItem(1, "fast", 1f, 10f),
+            new TowerItem(1, "fast", 1f, 10f),
+            new TowerItem(3, "normal", 1f, 1f) };
     }
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        this.health -= damage;
+    }
+    public void GetMoney(int addedMoney)
+    {
+        this.money += addedMoney;
     }
 }

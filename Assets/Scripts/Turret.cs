@@ -9,7 +9,8 @@ public class Turret : MonoBehaviour
     [Header("Stats")]
     public float range = 15f;
     public float fireRate = 1f;
-    public float fireCountdown = 0f;
+    public float damage;
+    private float fireCountdown = 0f;
 
     [Header("Unity fields")]
     public string enemytag = "Enemy";
@@ -79,6 +80,7 @@ public class Turret : MonoBehaviour
 
         if (bullet != null)
             bullet.Target(target);
+            bullet.setDamage(damage);
     }
 
     private void OnDrawGizmosSelected()

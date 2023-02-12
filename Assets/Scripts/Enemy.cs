@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    double health = 3;
+    public double health = 3;
     public float speed = 0.2f;
     public GameObject target;
+    public int worth = 10;
+    public int damage = 10;
 
     private void Start()
     {
@@ -22,7 +24,7 @@ public class Enemy : MonoBehaviour
             target = target.GetComponent<Waypoint>().next;
             if(target == null)
             {
-                Player.instance.TakeDamage(10);
+                Player.instance.TakeDamage(this.damage);
                 Destroy(this.gameObject);
                 return;
             }
@@ -34,6 +36,7 @@ public class Enemy : MonoBehaviour
         this.health -= damage;
         if(this.health <= 0)
         {
+            Player.instance.GetMoney(this.worth);
             Destroy(this.gameObject);
         }
     }

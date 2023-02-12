@@ -6,10 +6,15 @@ public class Bullet : MonoBehaviour
 {
     private Transform target;
     private float speed = 70f;
+    private float damage;
 
     public void Target(Transform _target)
     {
         target = _target;
+    }
+    public void setDamage(float dmg)
+    {
+        damage = dmg;
     }
 
     // Update is called once per frame
@@ -35,7 +40,7 @@ public class Bullet : MonoBehaviour
     void HitTarget()
     {
         Enemy enemy = target.GetComponent<Enemy>();
-        enemy.TakeDamage(1);
+        enemy.TakeDamage(damage);
         Destroy(this.gameObject);
     }
 }
