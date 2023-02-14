@@ -52,7 +52,17 @@ public class Ui : MonoBehaviour
     }
     public void startWave()
     {
+        if (spawner.spawning)
+        {
+            return;
+        }
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        if (enemies != null && enemies.Length > 0) 
+        { 
+            return;
+        }
         spawner.StartWave();
+        spawner.spawning = true;
     }
 
     public void selectNormalTurret()
@@ -78,7 +88,9 @@ public class Ui : MonoBehaviour
         foreach(TowerItem tower in Player.instance.towers)
         {
             GameObject newUiTower = Instantiate(TurretUi);
-            newUiTower.transform.parent = Inventory;
+            newUiTower.transform.SetParent(Inventory);
+
+            newUiTower.transform.GetChild(0).GetComponent<UiElement>().item = tower;
 
             Button button = newUiTower.transform.GetChild(0).GetComponent<Button>();
             button.onClick.AddListener(delegate { selectTurret(tower); });

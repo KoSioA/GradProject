@@ -15,19 +15,19 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        towers = new List<TowerItem> { new TowerItem(1, "normal", 1f, 1f), 
-            new TowerItem(1, "fast", 1f, 10f), 
-            new TowerItem(2, "normal", 1f, 1f),
-            new TowerItem(1, "fast", 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f),
-            new TowerItem(3, "normal", 1f, 1f) };
+        towers = new List<TowerItem> { new TowerItem(1, "normal", 1f, 1f, 10f), 
+            new TowerItem(1, "fast", 1f, 10f, 5f), 
+            new TowerItem(2, "normal", 1f, 1f, 10f),
+            new TowerItem(1, "fast", 1f, 10f, 5f),
+            new TowerItem(1, "fast", 1f, 10f, 5f),
+            new TowerItem(1, "fast", 1f, 10f, 5f),
+            new TowerItem(1, "fast", 1f, 10f, 5f),
+            new TowerItem(1, "fast", 1f, 10f, 5f),
+            new TowerItem(1, "fast", 1f, 10f, 5f),
+            new TowerItem(1, "fast", 1f, 10f, 5f),
+            new TowerItem(1, "fast", 1f, 10f, 5f),
+            new TowerItem(1, "fast", 1f, 10f, 5f),
+            new TowerItem(3, "normal", 1f, 1f, 10f) };
     }
     public void TakeDamage(int damage)
     {

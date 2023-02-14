@@ -58,10 +58,9 @@ public class Node : MonoBehaviour
                 break;
         }
         GameObject newTurret = Instantiate(turretPrefab, position, rotation);
-        Debug.Log(newTurret.GetComponent<Turret>().damage);
         newTurret.GetComponent<Turret>().damage = tower.damage;
-        Debug.Log(newTurret.GetComponent<Turret>().damage);
         newTurret.GetComponent<Turret>().fireRate = tower.fireRate;
+        newTurret.GetComponent<Turret>().range = tower.range;
         return newTurret;
     }
 }
