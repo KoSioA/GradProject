@@ -46,7 +46,6 @@ public class Node : MonoBehaviour
 
     private GameObject ToGameObject(TowerItem tower, Vector3 position, Quaternion rotation)
     {
-        Debug.Log("Converting to game Object");
         GameObject turretPrefab = null;
         switch (tower.towerType)
         {

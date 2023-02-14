@@ -16,6 +16,11 @@ public class UiElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        string name = eventData.pointerCurrentRaycast.gameObject.name;
+        if (name == "ToolTip" || name == "Background" || name == "ToolTipText")
+        {
+            return;
+        }
         ToolTip.HideToolTipStatic();
     }
 }
