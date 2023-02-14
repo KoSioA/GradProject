@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Ui : MonoBehaviour
 {
     public static Ui instance;
+    bool isInInventory = false;
     BuildManager bm;
     WaveSpawner spawner;
     GameObject waveButton;
@@ -64,18 +65,12 @@ public class Ui : MonoBehaviour
         spawner.StartWave();
         spawner.spawning = true;
     }
-
-    public void selectNormalTurret()
-    {
-        bm.changeTurret(Player.instance.towers[0]);
-    }
-
-    public void selectFastTurret()
-    {
-        bm.changeTurret(Player.instance.towers[1]);
-    }
     public void selectTurret(TowerItem tower)
     {
+        if (!isInInventory)
+        {
+            return;
+        }
         bm.changeTurret(tower);
     }
 
