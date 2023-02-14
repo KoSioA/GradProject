@@ -19,14 +19,16 @@ public class Level
         new string[] {"t", "t", "t", "t", "p" },
         new string[] {"t", "t", "4", "p", "3" },
         new string[] {"t", "t", "5 ", "t", "t" }
-    }, new Vector3(1, 0, 0));
+    }, new Vector3(1, 0, 0), new Vector3(2, 0, 4));
     public string[][] level;
     public string[][] path;
     public Vector3 spawnPoint;
-    public Level(string[][] level, string[][] path, Vector3 spawn)
+    public Vector3 basePoint;
+    public Level(string[][] level, string[][] path, Vector3 spawn, Vector3 basePoint)
     {
         this.level = level;
         this.path = path;
         this.spawnPoint = spawn;
+        this.basePoint = basePoint;
     }
 }

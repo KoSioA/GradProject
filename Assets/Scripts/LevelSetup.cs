@@ -8,8 +8,11 @@ public class LevelSetup : MonoBehaviour
 {
     public char[][] field;
     public int size = 2;
+    [Tooltip("DON'T TOUCH! Code does all the work here")]
     public GameObject firstNode;
+    [Header("World Objects")]
     public GameObject Spawner;
+    public GameObject Base;
 
     [Header("Groupings")]
     public GameObject PathNodes;
@@ -26,6 +29,7 @@ public class LevelSetup : MonoBehaviour
         string[][] level = Level.level1.level;
         string[][] path = Level.level1.path;
         Vector3 spawnPoint = Level.level1.spawnPoint;
+        Vector3 basePoint = Level.level1.basePoint;
 
         Dictionary<int, GameObject> paths = new Dictionary<int, GameObject>();
         for (int i = 0; i < level.Length; i++)
@@ -74,8 +78,8 @@ public class LevelSetup : MonoBehaviour
             }
             previous = pathKvp.Value;
         }
-
-        Spawner.transform.position = new Vector3(spawnPoint.x * size * 1.5f, Spawner.transform.position.y, spawnPoint.z * size * 1.5f);
+        Base.transform.position = new Vector3(basePoint.x * size * 1.5f, Spawner.transform.position.y, -basePoint.z * size * 1.5f);
+        Spawner.transform.position = new Vector3(spawnPoint.x * size * 1.5f, Spawner.transform.position.y, -spawnPoint.z * size * 1.5f);
 
     }
 }
