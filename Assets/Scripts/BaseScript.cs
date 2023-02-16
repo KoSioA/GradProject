@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class BaseScript : MonoBehaviour
 {
-    List<IItem> inventory;
+    public List<IItem> inventory;
+    public static BaseScript instance;
     private void Awake()
     {
+        instance = this;
         inventory = new List<IItem> { new TowerItem(1, "normal", 1f, 1f, 10f),
             new TowerItem(1, "fast", 1f, 10f, 5f),
             new TowerItem(2, "normal", 1f, 1f, 10f),
@@ -23,6 +25,7 @@ public class BaseScript : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        BuildManager.instance.selectedTurret = null;
         BaseInventory.Instance.ShowInventory();
     }
     private void OnMouseEnter()

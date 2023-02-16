@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Ui : MonoBehaviour
 {
     public static Ui instance;
-    bool isInInventory = false;
+    public bool isInInventory = false;
     BuildManager bm;
     WaveSpawner spawner;
     GameObject waveButton;
@@ -67,10 +67,6 @@ public class Ui : MonoBehaviour
     }
     public void selectTurret(TowerItem tower)
     {
-        if (!isInInventory)
-        {
-            return;
-        }
         bm.changeTurret(tower);
     }
 
@@ -80,7 +76,16 @@ public class Ui : MonoBehaviour
         {
             Destroy(ui.gameObject);
         }
-        foreach(TowerItem tower in Player.instance.towers)
+        if (isInInventory)
+        {
+            BaseInventory.Instance.LoadItems();
+        }
+        LoadItems();
+    }
+
+    public void LoadItems()
+    {
+        foreach (TowerItem tower in Player.instance.towers)
         {
             GameObject newUiTower = Instantiate(TurretUi);
             newUiTower.transform.SetParent(Inventory);
@@ -92,30 +97,41 @@ public class Ui : MonoBehaviour
 
             Image rarity = newUiTower.GetComponent<Image>();
             Image icon = newUiTower.transform.GetChild(0).GetComponent<Image>();
-            switch (tower.towerType)
-            {
-                case "normal":
-                    icon.sprite = normalTurretSprite;
-                    break;
-                case "fast":
-                    icon.sprite = fastTurretSprite;
-                    break;
-            }
-            switch (tower.rarity)
-            {
-                case 1:
-                    rarity.color = Color.gray;
-                    break;
-                case 2:
-                    rarity.color = Color.yellow;
-                    break;
-                case 3:
-                    rarity.color = Color.magenta;
-                    break;
-                default:
-                    rarity.color = Color.white;
-                    break;
-            }
+
+            SetUISprite(tower, icon);
+            SetRarityColor(tower, rarity);
+        }
+
+    }
+    private void SetRarityColor(TowerItem tower, Image rarity)
+    {
+        switch (tower.rarity)
+        {
+            case 1:
+                rarity.color = Color.gray;
+                break;
+            case 2:
+                rarity.color = Color.yellow;
+                break;
+            case 3:
+                rarity.color = Color.magenta;
+                break;
+            default:
+                rarity.color = Color.white;
+                break;
+        }
+    }
+
+    private void SetUISprite(TowerItem tower, Image icon)
+    {
+        switch (tower.towerType)
+        {
+            case "normal":
+                icon.sprite = normalTurretSprite;
+                break;
+            case "fast":
+                icon.sprite = fastTurretSprite;
+                break;
         }
     }
 }

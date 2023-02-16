@@ -17,7 +17,8 @@ public class BuildManager : MonoBehaviour
 
     private void Start()
     {
-        selectedTurret = Player.instance.towers[0];
+        selectedTurret = null;
+        //selectedTurret = Player.instance.towers[0];
     }
     public void changeTurret(TowerItem turret)
     {
