@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,11 @@ public class TowerItem : IItem
         this.damage = damage * rarity;
         this.fireRate = fireRate;
         this.range = range;
+    }
+
+    public static TowerItem CreateRandom()
+    {
+        throw new NotImplementedException();
     }
 
     override public string ToString()

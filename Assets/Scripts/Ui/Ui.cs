@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Ui : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Ui : MonoBehaviour
     WaveSpawner spawner;
     GameObject waveButton;
 
+    public TextMeshProUGUI money;
     [Header("Wave Images")]
     public Sprite waveStartButton;
     public Sprite midWaveButton;
@@ -23,7 +25,6 @@ public class Ui : MonoBehaviour
     [Header("Prefabs")]
     public Transform Inventory;
     public GameObject TurretUi;
-
     private void Awake()
     {
         instance = this; 
@@ -38,6 +39,7 @@ public class Ui : MonoBehaviour
     }
     private void Update()
     {
+        SetMoney();
         if (spawner.spawning)
         {
             waveButton.GetComponent<Image>().sprite = midWaveButton;
@@ -51,6 +53,17 @@ public class Ui : MonoBehaviour
         }
         waveButton.GetComponent<Image>().sprite = waveStartButton;
     }
+
+    private void SetMoney()
+    {
+        if (money == null)
+        {
+            money.SetText("$0");
+            return;
+        }
+        money.SetText("$" + Player.instance.money);
+    }
+
     public void startWave()
     {
         if (spawner.spawning)
