@@ -28,7 +28,51 @@ public class TowerItem : IItem
 
     public static TowerItem CreateRandom()
     {
-        throw new NotImplementedException();
+        System.Random rand = new System.Random();
+        int rarity = rand.Next(1, 4);
+        int tt = rand.Next(1, 3);
+        string towerType = "normal";
+
+        float damageModifier = 0;
+        float baseDamage = 0;
+
+        float fireRateModifier = 0;
+        float baseFireRate = 0;
+
+        float baseRange = 0;
+        float rangeModifier = 0;
+
+        switch (tt)
+        {
+            case 1:
+                towerType = "normal";
+                damageModifier = 5;
+                baseDamage = 10;
+
+                baseFireRate = 1;
+                fireRateModifier = 2;
+
+                baseRange = 8;
+                rangeModifier = 4;
+                break;
+            case 2:
+                towerType = "fast";
+                damageModifier = 2;
+                baseDamage = 1;
+
+                baseFireRate = 10;
+                fireRateModifier = 5;
+
+                baseRange = 5;
+                rangeModifier = 3;
+                break;
+        }
+        float damage = baseDamage + damageModifier * (float)rand.NextDouble();
+        float fireRate = baseFireRate + fireRateModifier * (float)rand.NextDouble();
+        float range = baseRange + rangeModifier * (float)rand.NextDouble();
+        TowerItem output = new TowerItem(rarity, towerType, damage, fireRate, range);
+        return output;
+
     }
 
     override public string ToString()
