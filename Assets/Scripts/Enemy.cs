@@ -16,7 +16,6 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log("Updating?");
         Vector3 dir = target.transform.position - this.transform.position;
         this.transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
         if(Vector3.Distance(this.transform.position, target.transform.position) < 0.2f)
@@ -30,14 +29,19 @@ public class Enemy : MonoBehaviour
             }
         }
     }
+    private void Die()
+    {
+        Player.instance.GetMoney(this.worth);
+        BaseScript.instance.AddItem(TowerItem.CreateRandom());
+        Destroy(this.gameObject);
+    }
 
     public void TakeDamage(float damage)
     {
         this.health -= damage;
         if(this.health <= 0)
         {
-            Player.instance.GetMoney(this.worth);
-            Destroy(this.gameObject);
+            this.Die();
         }
     }
 }

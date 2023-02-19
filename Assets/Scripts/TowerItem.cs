@@ -29,7 +29,7 @@ public class TowerItem : IItem
     public static TowerItem CreateRandom()
     {
         System.Random rand = new System.Random();
-        int rarity = rand.Next(1, 4);
+        int rarity = RandRarity();
         int tt = rand.Next(1, 3);
         string towerType = "normal";
 
@@ -73,6 +73,22 @@ public class TowerItem : IItem
         TowerItem output = new TowerItem(rarity, towerType, damage, fireRate, range);
         return output;
 
+    }
+    
+    private static int RandRarity()
+    {
+        System.Random rand = new System.Random();
+        int random = rand.Next(1, 11);//gives a random value between 1 and 10 including 1 and 10.
+        int rarity = 1;
+        if(random >= 7)
+        {
+            rarity = 2;
+        }
+        if(random == 10)
+        {
+            rarity = 3;
+        }
+        return rarity;
     }
 
     override public string ToString()

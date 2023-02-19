@@ -9,19 +9,16 @@ public class BaseScript : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        inventory = new List<IItem> { new TowerItem(1, "normal", 1f, 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(2, "normal", 1f, 1f, 10f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(1, "fast", 1f, 10f, 5f),
-            new TowerItem(3, "normal", 1f, 1f, 10f) };
+        inventory = new List<IItem> { new TowerItem(1, "normal", 1f, 1f, 10f) };
+    }
+    public void AddItem(IItem item)
+    {
+        inventory.Add(item);
+        if(Ui.instance.isInInventory == false)
+        {
+            return;
+        }
+        BaseInventory.Instance.LoadInventory();
     }
     private void OnMouseDown()
     {
