@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     public GameObject target;
     public int worth = 10;
     public int damage = 10;
+    private int dropChance = 20;
+    public bool boss = false;
 
     private void Start()
     {
@@ -32,10 +34,22 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         Player.instance.GetMoney(this.worth);
-        BaseScript.instance.AddItem(TowerItem.CreateRandom());
+        this.Drop();
         Destroy(this.gameObject);
     }
-
+    private void Drop()
+    {
+        if (this.boss)
+        {
+            BaseScript.instance.AddItem(TowerItem.CreateRandom());
+            return;
+        }
+        System.Random rand = new System.Random();
+        if(rand.Next(1, 101) <= this.dropChance)
+        {
+            BaseScript.instance.AddItem(TowerItem.CreateRandom());
+        }
+    }
     public void TakeDamage(float damage)
     {
         this.health -= damage;

@@ -20,6 +20,14 @@ public class BaseScript : MonoBehaviour
         }
         BaseInventory.Instance.LoadInventory();
     }
+    public void ClearInventory()
+    {
+        foreach(IItem item in inventory)
+        {
+            Player.instance.GetMoney(10 * item.rarity);
+        }
+        inventory.Clear();
+    }
     private void OnMouseDown()
     {
         BuildManager.instance.selectedTurret = null;

@@ -96,9 +96,9 @@ public class TowerItem : IItem
         string output = "";
 
         output += this.towerType + " tower\n" +
-                  "Damage: " + this.damage + "\n" +
-                  "FireRate: " + this.fireRate + "\n" +
-                  "Range: " + this.range + "\n" +
+                  "Damage: " + Math.Round(this.damage, 2) + "\n" +
+                  "FireRate: " + Math.Round(this.fireRate, 2) + "\n" +
+                  "Range: " + Math.Round(this.range, 2) + "\n" +
                   "Rarity: " + this.rarity;
 
         return output;
