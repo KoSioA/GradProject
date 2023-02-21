@@ -20,6 +20,7 @@ public class WaveSpawner : MonoBehaviour
 
     public void StartWave()
     {
+        BaseScript.instance.ClearInventory();
         StartCoroutine(SpawnWave());
     }
 

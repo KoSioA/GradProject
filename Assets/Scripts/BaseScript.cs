@@ -27,6 +27,7 @@ public class BaseScript : MonoBehaviour
             Player.instance.GetMoney(10 * item.rarity);
         }
         inventory.Clear();
+        BaseInventory.Instance.LoadInventory();
     }
     private void OnMouseDown()
     {
