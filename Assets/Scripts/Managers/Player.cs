@@ -32,6 +32,10 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage)
     {
         this.health -= damage;
+        if(this.health <= 0)
+        {
+            Game.instance.playing = false;
+        }
     }
     public void GetMoney(int addedMoney)
     {

@@ -26,10 +26,10 @@ public class LevelSetup : MonoBehaviour
 
     void Start()
     {
-        string[][] level = Level.level1.level;
-        string[][] path = Level.level1.path;
-        Vector3 spawnPoint = Level.level1.spawnPoint;
-        Vector3 basePoint = Level.level1.basePoint;
+        string[][] level = Level.level2.level;
+        string[][] path = Level.level2.path;
+        Vector3 spawnPoint = Level.level2.spawnPoint;
+        Vector3 basePoint = Level.level2.basePoint;
 
         Dictionary<int, GameObject> paths = new Dictionary<int, GameObject>();
         for (int i = 0; i < level.Length; i++)

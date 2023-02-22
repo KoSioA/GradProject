@@ -106,7 +106,14 @@ public class Ui : MonoBehaviour
             newUiTower.transform.GetChild(0).GetComponent<UiElement>().item = tower;
 
             Button button = newUiTower.transform.GetChild(0).GetComponent<Button>();
-            button.onClick.AddListener(delegate { selectTurret(tower); });
+            button.onClick.AddListener(delegate {
+                if (!Game.instance.playing)
+                {
+                    return;
+                }
+
+                selectTurret(tower); 
+            });
 
             Image rarity = newUiTower.GetComponent<Image>();
             Image icon = newUiTower.transform.GetChild(0).GetComponent<Image>();

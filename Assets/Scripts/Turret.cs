@@ -56,7 +56,11 @@ public class Turret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(target == null)
+        if (!Game.instance.playing)
+        {
+            return;
+        }
+        if (target == null)
         {
             return;
         }

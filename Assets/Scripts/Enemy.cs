@@ -5,12 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public double health = 3;
+    public double maxHealth = 3;
     public float speed = 0.2f;
     public GameObject target;
     public int worth = 10;
     public int damage = 10;
     private int dropChance = 20;
-    public bool boss = false;
+    public bool isBoss = false;
 
     private void Start()
     {
@@ -18,12 +19,24 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
+        if (!Game.instance.playing)
+        {
+            return;
+        }
+        if(this.health > this.maxHealth)
+        {
+            this.health = this.maxHealth;
+        }
+        this.Move();
+    }
+    private void Move()
+    {
         Vector3 dir = target.transform.position - this.transform.position;
         this.transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
-        if(Vector3.Distance(this.transform.position, target.transform.position) < 0.2f)
+        if (Vector3.Distance(this.transform.position, target.transform.position) < 0.2f)
         {
             target = target.GetComponent<Waypoint>().next;
-            if(target == null)
+            if (target == null)
             {
                 Player.instance.TakeDamage(this.damage);
                 Destroy(this.gameObject);
@@ -39,7 +52,7 @@ public class Enemy : MonoBehaviour
     }
     private void Drop()
     {
-        if (this.boss)
+        if (this.isBoss)
         {
             BaseScript.instance.AddItem(TowerItem.CreateRandom());
             return;

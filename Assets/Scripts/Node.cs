@@ -20,7 +20,11 @@ public class Node : MonoBehaviour
     }
     private void OnMouseEnter()
     {
-        if(turret != null)
+        if (!Game.instance.playing)
+        {
+            return;
+        }
+        if (turret != null)
         {
             rend.material.color = Color.red;
             return;
@@ -29,12 +33,20 @@ public class Node : MonoBehaviour
     }
     private void OnMouseExit()
     {
+        if (!Game.instance.playing)
+        {
+            return;
+        }
         rend.material.color = startColor;
     }
 
     private void OnMouseDown()
     {
-        if(turret != null || BuildManager.instance.GetSelectedTurret() == null)
+        if (!Game.instance.playing)
+        {
+            return;
+        }
+        if (turret != null || BuildManager.instance.GetSelectedTurret() == null)
         {
             return;
         }
