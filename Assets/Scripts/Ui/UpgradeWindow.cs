@@ -42,7 +42,14 @@ public class UpgradeWindow : MonoBehaviour
     }
     private void UpdateUpgrades()
     {
-        foreach(var upgrade in this.tower.upgrades)
+        foreach (var ui in GameObject.FindGameObjectsWithTag("TurretUI"))
+        {
+            if (ui.transform.parent == this.upgradeView)
+            {
+                Destroy(ui.gameObject);
+            }
+        }
+        foreach (var upgrade in this.tower.upgrades)
         {
             GameObject current = Instantiate(UIPrefab);
             current.transform.SetParent(upgradeView);

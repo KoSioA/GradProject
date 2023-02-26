@@ -92,7 +92,7 @@ public class Ui : MonoBehaviour
         }
         if (isInInventory)
         {
-            BaseInventory.Instance.LoadItems();
+            BaseInventory.instance.LoadItems();
         }
         LoadItems();
     }

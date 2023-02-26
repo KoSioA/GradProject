@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BaseInventory : MonoBehaviour
 {
-    public static BaseInventory Instance;
+    public static BaseInventory instance;
     [Header("Icons")]
     public Sprite normalTurretSprite;
     public Sprite fastTurretSprite;
@@ -15,10 +15,9 @@ public class BaseInventory : MonoBehaviour
     public GameObject TurretUi;
     private void Awake()
     {
-        Instance = this;
+        instance = this;
         this.gameObject.SetActive(false);
     }
-
     public void ShowInventory()
     {
         this.gameObject.SetActive(true);

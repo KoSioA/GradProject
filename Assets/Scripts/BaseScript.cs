@@ -18,7 +18,7 @@ public class BaseScript : MonoBehaviour
         {
             return;
         }
-        BaseInventory.Instance.LoadInventory();
+        BaseInventory.instance.LoadInventory();
     }
     public void ClearInventory()
     {
@@ -27,12 +27,12 @@ public class BaseScript : MonoBehaviour
             Player.instance.GetMoney(10 * item.rarity);
         }
         inventory.Clear();
-        BaseInventory.Instance.LoadInventory();
+        BaseInventory.instance.LoadInventory();
     }
     private void OnMouseDown()
     {
         BuildManager.instance.selectedTurret = null;
-        BaseInventory.Instance.ShowInventory();
+        BaseInventory.instance.ShowInventory();
     }
     private void OnMouseEnter()
     {
