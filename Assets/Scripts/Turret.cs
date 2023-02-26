@@ -21,6 +21,8 @@ public class Turret : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
 
+    public TowerItem tower;
+
     
 
     // Start is called before the first frame update
@@ -76,8 +78,19 @@ public class Turret : MonoBehaviour
         }
         fireCountdown -= Time.deltaTime;
     }
+    public void OpenUpgrade()
+    {
+        UpgradeWindow.instance.OpenWindow(tower);
+    }
+    public void updateStats()
+    {
+        var newStats = this.tower.getStats();
+        this.damage = newStats["damage"];
+        this.range = newStats["range"];
+        this.fireRate = newStats["fireRate"];
+    }
 
-    void Shoot()
+    private void Shoot()
     {
         GameObject bulletGO = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();

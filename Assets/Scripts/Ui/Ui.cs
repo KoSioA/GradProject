@@ -21,6 +21,7 @@ public class Ui : MonoBehaviour
     [Header("Icons")]
     public Sprite normalTurretSprite;
     public Sprite fastTurretSprite;
+    public Sprite upgradeSprite;
 
     [Header("Prefabs")]
     public Transform Inventory;
@@ -98,32 +99,35 @@ public class Ui : MonoBehaviour
 
     public void LoadItems()
     {
-        foreach (TowerItem tower in Player.instance.towers)
+        foreach (IItem item in Player.instance.inventory)
         {
             GameObject newUiTower = Instantiate(TurretUi);
             newUiTower.transform.SetParent(Inventory);
 
-            newUiTower.transform.GetChild(0).GetComponent<UiElement>().item = tower;
+            newUiTower.transform.GetChild(0).GetComponent<UiElement>().item = item;
+            if (item.type == "tower")
+            {
+                Button button = newUiTower.transform.GetChild(0).GetComponent<Button>();
+                button.onClick.AddListener(delegate {
+                    if (!Game.instance.playing)
+                    {
+                        return;
+                    }
 
-            Button button = newUiTower.transform.GetChild(0).GetComponent<Button>();
-            button.onClick.AddListener(delegate {
-                if (!Game.instance.playing)
-                {
-                    return;
-                }
+                    selectTurret((TowerItem)item); 
+                });
+            }
 
-                selectTurret(tower); 
-            });
 
             Image rarity = newUiTower.GetComponent<Image>();
             Image icon = newUiTower.transform.GetChild(0).GetComponent<Image>();
 
-            SetUISprite(tower, icon);
-            SetRarityColor(tower, rarity);
+            SetUISprite(item, icon);
+            SetRarityColor(item, rarity);
         }
 
     }
-    private void SetRarityColor(TowerItem tower, Image rarity)
+    private void SetRarityColor(IItem tower, Image rarity)
     {
         switch (tower.rarity)
         {
@@ -142,8 +146,14 @@ public class Ui : MonoBehaviour
         }
     }
 
-    private void SetUISprite(TowerItem tower, Image icon)
+    private void SetUISprite(IItem item, Image icon)
     {
+        if(item.type == "upgrade")
+        {
+            icon.sprite = upgradeSprite;
+            return;
+        }
+        TowerItem tower = (TowerItem)item;
         switch (tower.towerType)
         {
             case "normal":

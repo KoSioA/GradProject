@@ -26,7 +26,7 @@ public class Node : MonoBehaviour
         }
         if (turret != null)
         {
-            rend.material.color = Color.red;
+            rend.material.color = Color.blue;
             return;
         }
         rend.material.color = hoverColor;
@@ -46,7 +46,11 @@ public class Node : MonoBehaviour
         {
             return;
         }
-        if (turret != null || BuildManager.instance.GetSelectedTurret() == null)
+        if (turret != null)
+        {
+            this.turret.GetComponent<Turret>().OpenUpgrade();
+        }
+        if (BuildManager.instance.GetSelectedTurret() == null)
         {
             return;
         }
@@ -69,9 +73,9 @@ public class Node : MonoBehaviour
                 break;
         }
         GameObject newTurret = Instantiate(turretPrefab, position, rotation);
-        newTurret.GetComponent<Turret>().damage = tower.damage;
-        newTurret.GetComponent<Turret>().fireRate = tower.fireRate;
-        newTurret.GetComponent<Turret>().range = tower.range;
+        newTurret.GetComponent<Turret>().tower = tower;
+        newTurret.GetComponent<Turret>().updateStats();
+
         return newTurret;
     }
 }

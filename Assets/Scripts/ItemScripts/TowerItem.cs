@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class TowerItem : IItem
     public float damage { get; private set; }
     public float range { get; private set; }
     public float fireRate { get; private set; }
+    public UpgradeItem[] upgrades;
     public TowerItem()
     {
         type = "tower";
@@ -24,8 +26,42 @@ public class TowerItem : IItem
         this.damage = damage * rarity;
         this.fireRate = fireRate;
         this.range = range;
+        this.upgrades = new UpgradeItem[this.rarity];
     }
+    /// <summary>
+    /// returns a dictionary with "damage", "range" and "fireRate"
+    /// </summary>
+    public Dictionary<string, float> getStats()
+    {
+        Dictionary<string, float> stats = new Dictionary<string, float>();
+        stats.Add("damage", this.damage);
+        stats.Add("range", this.range);
+        stats.Add("fireRate", this.fireRate);
+        foreach(UpgradeItem upgrade in this.upgrades)
+        {
+            if(upgrade == null)
+            {
+                continue;
+            }
+            stats["damage"] += upgrade.damageMod;
+            stats["range"] += upgrade.rangeMod;
+            stats["fireRate"] += upgrade.fireRateMod;
+        }
+        return stats;
+    }
+    public void AddUpgrade(UpgradeItem upgrade, int position)
+    {
+        if(this.upgrades.Length <= position)
+        {
+            return;
+        }
+        if(this.upgrades[position] != null)
+        {
 
+            Player.instance.inventory.Add(this.upgrades[position]);
+        }
+        this.upgrades[position] = upgrade;
+    }
     public static TowerItem CreateRandom()
     {
         System.Random rand = new System.Random();
@@ -94,11 +130,12 @@ public class TowerItem : IItem
     override public string ToString()
     {
         string output = "";
-
+        int filledUpgrades = upgrades.Where(x => x != null).Count();
         output += this.towerType + " tower\n" +
                   "Damage: " + Math.Round(this.damage, 2) + "\n" +
                   "FireRate: " + Math.Round(this.fireRate, 2) + "\n" +
                   "Range: " + Math.Round(this.range, 2) + "\n" +
+                  "Upgrades: " + filledUpgrades + "\n" +
                   "Rarity: " + this.rarity;
 
         return output;

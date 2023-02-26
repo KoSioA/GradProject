@@ -30,7 +30,7 @@ public class BuildManager : MonoBehaviour
     }
     public void removeTurret()
     {
-        Player.instance.towers.Remove(selectedTurret);
+        Player.instance.inventory.Remove(selectedTurret);
         this.Deselect();
         Ui.instance.LoadTurrets();
     }
