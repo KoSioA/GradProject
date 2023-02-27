@@ -88,11 +88,10 @@ public class Ui : MonoBehaviour
     {
         foreach(var ui in GameObject.FindGameObjectsWithTag("TurretUI"))
         {
-            Destroy(ui.gameObject);
-        }
-        if (isInInventory)
-        {
-            BaseInventory.instance.LoadItems();
+            if(ui.transform.parent.name == "InventoryContent")
+            {
+                Destroy(ui.gameObject);
+            }
         }
         LoadItems();
     }
@@ -104,7 +103,7 @@ public class Ui : MonoBehaviour
             GameObject newUiTower = Instantiate(TurretUi);
             newUiTower.transform.SetParent(Inventory);
 
-            newUiTower.transform.GetChild(0).GetComponent<UiElement>().item = item;
+            newUiTower.transform.GetComponent<UiElement>().item = item;
             if (item.type == "tower")
             {
                 Button button = newUiTower.transform.GetChild(0).GetComponent<Button>();

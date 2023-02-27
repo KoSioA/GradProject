@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class UpgradeWindow : MonoBehaviour
 {
     public static UpgradeWindow instance;
-    private TowerItem tower;
+    public TowerItem tower { get; private set; }
     public TextMeshProUGUI statsText;
 
     public GameObject UIPrefab;
@@ -26,12 +26,29 @@ public class UpgradeWindow : MonoBehaviour
     }
     public void UpdateWindow()
     {
+        if (tower == null)
+        {
+            return;
+        }
+        this.gameObject.SetActive(true);
+        UpdateStats();
+        UpdateUpgrades();
+    }
+    public void UpdateWithoutOpening()
+    {
+        if (tower == null)
+        {
+            return;
+        }
         UpdateStats();
         UpdateUpgrades();
     }
     private void UpdateStats()
     {
-        this.gameObject.SetActive(true);
+        if(tower == null)
+        {
+            return;
+        }
         var towerStats = tower.getStats();
         string stats = $"{tower.towerType} tower\n" +
                         $"Damage: {towerStats["damage"]}\n" +
@@ -42,6 +59,10 @@ public class UpgradeWindow : MonoBehaviour
     }
     private void UpdateUpgrades()
     {
+        if (tower == null)
+        {
+            return;
+        }
         foreach (var ui in GameObject.FindGameObjectsWithTag("TurretUI"))
         {
             if (ui.transform.parent == this.upgradeView)
@@ -49,18 +70,21 @@ public class UpgradeWindow : MonoBehaviour
                 Destroy(ui.gameObject);
             }
         }
+        int pos = -1;
         foreach (var upgrade in this.tower.upgrades)
         {
+            pos++;
             GameObject current = Instantiate(UIPrefab);
             current.transform.SetParent(upgradeView);
-            if(upgrade == null)
+            current.transform.GetComponent<UiElementDragAndDrop>().position = pos;
+            if (upgrade == null)
             {
                 current.GetComponent<Image>().color = emptyUpgradeColor;
-                current.transform.GetChild(0).GetComponent<UiElement>().item = UpgradeItem.EmptyItem;
+                current.transform.GetComponent<UiElement>().item = UpgradeItem.EmptyItem;
                 current.transform.GetChild(0).GetComponent<Image>().sprite = null;
                 continue;
             }
-            current.transform.GetChild(0).GetComponent<UiElement>().item = upgrade;
+            current.transform.GetComponent<UiElement>().item = upgrade;
             SetRarityColor(upgrade, current.GetComponent<Image>());
             current.transform.GetChild(0).GetComponent<Image>().sprite = upgradeIcon;
 
