@@ -38,6 +38,11 @@ public class Ui : MonoBehaviour
         waveButton = GameObject.Find("StartWave");
         LoadTurrets();
     }
+    public void UpdateAllWindows()
+    {
+        this.LoadTurrets();
+        BaseInventory.instance.LoadInventory();
+    }
     private void Update()
     {
         SetMoney();
@@ -112,7 +117,6 @@ public class Ui : MonoBehaviour
                     {
                         return;
                     }
-
                     selectTurret((TowerItem)item); 
                 });
             }

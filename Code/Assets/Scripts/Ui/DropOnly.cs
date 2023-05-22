@@ -8,6 +8,7 @@ public class DropOnly : MonoBehaviour, IDropHandler
     private const string invContent = "InventoryContent";
     private const string baseContent = "BaseContent";
     private const string upgradeContent = "Upgrades";
+    public int position = -1;
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("DROP");
@@ -40,6 +41,7 @@ public class DropOnly : MonoBehaviour, IDropHandler
         {
             Player.instance.inventory.Remove(item);
         }
+
         if (BaseScript.instance.inventory.Contains(item))
         {
             BaseScript.instance.inventory.Remove(item);
@@ -48,13 +50,19 @@ public class DropOnly : MonoBehaviour, IDropHandler
         {
             return;
         }
+        Debug.Log("Detaching Upgrade");
         for (int i = 0; i < UpgradeWindow.instance.tower.upgrades.Length; i++)
         {
             UpgradeItem upgrade = UpgradeWindow.instance.tower.upgrades[i];
             if (upgrade == (UpgradeItem)item)
             {
-                upgrade = null;
+                UpgradeWindow.instance.tower.upgrades[i] = null;
             }
         }
+        if (position == -1)
+        {
+            return;
+        }
+        UpgradeWindow.instance.tower.AddUpgrade((UpgradeItem)item, position);
     }
 }

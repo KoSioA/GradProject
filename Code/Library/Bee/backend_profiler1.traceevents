@@ -1,0 +1,511 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1683600123947080, "dur":2249, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600123949338, "dur":73, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1683600123949424, "dur":24, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1683600123949448, "dur":419, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1683600123949919, "dur":981, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600123950900, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270529, "dur":302, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270831, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270845, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270849, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270860, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270863, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270869, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270872, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270881, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270883, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270890, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270892, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270899, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270901, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270910, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270912, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270920, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270955, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125270991, "dur":2354, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1683600123950309, "dur":601, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600123950912, "dur":7408, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600123958336, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683600123958340, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600123958486, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683600123958492, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600123959658, "dur":2884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683600123962546, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1683600123962635, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600123962647, "dur":1714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1683600123964466, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1683600123964556, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600123964570, "dur":4044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1683600123968690, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1683600123968772, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600123968786, "dur":4409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1683600123973272, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600123973369, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600123973455, "dur":5475, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600123979018, "dur":204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1683600123979227, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600123979302, "dur":59567, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1683600124038959, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124039065, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124039075, "dur":3716, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124042866, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124042978, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124042992, "dur":4843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124047909, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124048019, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124048032, "dur":8628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124056732, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124056799, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124056807, "dur":2903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124059830, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124059915, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124059928, "dur":2686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124062691, "dur":519, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124063217, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124063230, "dur":7254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124070569, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124070636, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124070647, "dur":5512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124229801, "dur":77595, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124307433, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124307446, "dur":1367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124308871, "dur":181055, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124489933, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124489947, "dur":4007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124494035, "dur":43336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124537378, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124537391, "dur":1434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124538889, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124538989, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124538999, "dur":134360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124673450, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124673543, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124673557, "dur":312816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683600124986477, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683600124986564, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124986574, "dur":3476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683600124990127, "dur":220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1683600124990352, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124990361, "dur":1865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1683600124992316, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683600124992401, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124992411, "dur":3359, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683600124995846, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/level1.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683600124995920, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124995930, "dur":1784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/level1.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683600124997784, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1683600124997854, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600124997863, "dur":2345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1683600125000272, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1683600125000498, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683600125000506, "dur":2082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1683600125002657, "dur":267873, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600123950382, "dur":537, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600123950919, "dur":7410, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600123958337, "dur":233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1683600123958573, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124013449, "dur":5450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1683600124019006, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124019251, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124019265, "dur":13535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124033873, "dur":286, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124034167, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124034181, "dur":5522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124039778, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124039860, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124039871, "dur":4332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124044285, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124044381, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124044395, "dur":4123, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124048586, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124048654, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124048664, "dur":7439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124056178, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124056249, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124056261, "dur":92332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124148662, "dur":341418, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124490084, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124490092, "dur":3309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124493479, "dur":59501, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124552987, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124553000, "dur":1661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124554725, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124554785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124554795, "dur":118595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124673462, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124673540, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124673551, "dur":284304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124957925, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600124957993, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683600124958006, "dur":312439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683600125270500, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":2, "ts":1683600125270502, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600123950423, "dur":502, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600123950925, "dur":7433, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600123958359, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1683600123958542, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600124010887, "dur":3538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1683600124014515, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124014605, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600124014619, "dur":4771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124019484, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124019574, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600124019585, "dur":2912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124022623, "dur":467618, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124490245, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600124490253, "dur":3874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124494201, "dur":1144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124495349, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600124495389, "dur":2026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124497521, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124497616, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600124497629, "dur":140331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124638033, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124638110, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600124638120, "dur":156064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124794301, "dur":195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600124794499, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683600124794545, "dur":210383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683600125005008, "dur":265528, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600123950457, "dur":476, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600123950933, "dur":7398, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600123958336, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1683600123958467, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600123959533, "dur":2802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1683600123962406, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1683600123962470, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600123962532, "dur":1816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1683600123964450, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1683600123964515, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600123964524, "dur":3176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1683600123967866, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1683600123967964, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600123968136, "dur":3608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1683600123971827, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1683600123971905, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600123971918, "dur":3774, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1683600123975787, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600123975878, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600123975889, "dur":28174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124004180, "dur":13338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124017525, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124017538, "dur":12726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124030337, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124030403, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124030415, "dur":8224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124038742, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124038822, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124038833, "dur":6241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124045149, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124045215, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124045222, "dur":7883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124053193, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124053274, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124053287, "dur":17598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124070973, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124071057, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124071068, "dur":10376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124081578, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124081662, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124081673, "dur":16978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124098721, "dur":177721, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124276452, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124276469, "dur":1899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124278432, "dur":125789, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124404229, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124404246, "dur":87445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124491757, "dur":1284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124493078, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124493143, "dur":1901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124495116, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124495190, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124495198, "dur":344123, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124839388, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124839451, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124839461, "dur":125110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124964662, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600124964737, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683600124964747, "dur":257381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683600125222184, "dur":48363, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600123950492, "dur":447, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600123950939, "dur":7385, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600123958339, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1683600123958540, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124008108, "dur":4799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1683600124012985, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124013107, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124013118, "dur":2413, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124015619, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124015699, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124015711, "dur":3841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124019629, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124019715, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124019723, "dur":5201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124025019, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124025170, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124025188, "dur":6145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124031439, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124031543, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124031566, "dur":6154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124037791, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124037853, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124037865, "dur":6992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124044937, "dur":271, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124045213, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124045222, "dur":7986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124053286, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124053360, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124053368, "dur":5172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124058614, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124058688, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124058700, "dur":1974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124060752, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124060823, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124060834, "dur":4244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124065163, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124065245, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124065257, "dur":9469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124074803, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124074906, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124074919, "dur":4157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124079150, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124079230, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124079241, "dur":1959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124081293, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124081373, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124081385, "dur":22634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124104095, "dur":194720, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124298823, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124298837, "dur":2351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124301269, "dur":188732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124490007, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124490017, "dur":3782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124493891, "dur":1286, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124495182, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124495194, "dur":2368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124497645, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124497725, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124497736, "dur":282959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124780767, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600124780839, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1683600124780851, "dur":223285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1683600125004233, "dur":266302, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123950542, "dur":403, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123950945, "dur":7377, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123958337, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":6, "ts":1683600123958514, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123966792, "dur":4007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":6, "ts":1683600123970963, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1683600123971058, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123971079, "dur":3441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1683600123974594, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600123974687, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123974939, "dur":10746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600123985790, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600123985891, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123985980, "dur":5069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600123991192, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600123991315, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123991333, "dur":1857, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600123993263, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600123993341, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123993352, "dur":3450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600123996885, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600123996990, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600123997002, "dur":3468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124000551, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124000640, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600124000653, "dur":39021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124039762, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124039858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600124039872, "dur":6232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124046214, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124046292, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600124046305, "dur":5770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124052170, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124052257, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600124052270, "dur":108616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124161344, "dur":360141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124521493, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600124521509, "dur":1786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124523354, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124523421, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600124523432, "dur":229396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124752894, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124752973, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600124752984, "dur":218502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600124971566, "dur":176698, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600125148270, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1683600125148280, "dur":1602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1683600125149971, "dur":120563, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600123950576, "dur":374, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600123950950, "dur":7389, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600123958339, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1683600123958532, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600123969116, "dur":3124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1683600123972321, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1683600123972421, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600123972438, "dur":5327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1683600123977848, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject.exe" }}
+,{ "pid":12345, "tid":7, "ts":1683600123977930, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600123977939, "dur":87874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject.exe" }}
+,{ "pid":12345, "tid":7, "ts":1683600124066711, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124066789, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600124066798, "dur":9822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124076694, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124076772, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600124076783, "dur":5606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124082584, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124082673, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600124082686, "dur":4615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124087381, "dur":191904, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124279292, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600124279304, "dur":1474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124280841, "dur":209135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124489982, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600124489994, "dur":4184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124494367, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124494452, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600124494464, "dur":162461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124656990, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124657095, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600124657106, "dur":339926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":7, "ts":1683600124997119, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1683600124997201, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600124997212, "dur":2861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1683600125000151, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":7, "ts":1683600125000290, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1683600125000301, "dur":1913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":7, "ts":1683600125002299, "dur":268228, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123950615, "dur":341, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123950956, "dur":7377, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123958338, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1683600123958507, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123965124, "dur":3724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1683600123968919, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1683600123968992, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123969007, "dur":3498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1683600123972573, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1683600123972655, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123972665, "dur":3901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":8, "ts":1683600123976686, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":8, "ts":1683600123976810, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123976820, "dur":13406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":8, "ts":1683600123990315, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600123990412, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123990424, "dur":2476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600123992990, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600123993070, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123993083, "dur":3012, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600123996182, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600123996250, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123996262, "dur":3130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600123999496, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600123999574, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600123999588, "dur":3885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124003548, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124003652, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124003668, "dur":2484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124006223, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124006317, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124006331, "dur":2561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124008974, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124009060, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124009071, "dur":4299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124013448, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124013637, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124013653, "dur":2771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124016493, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124016559, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124016570, "dur":4071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124020716, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124020794, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124020805, "dur":5791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124026673, "dur":397, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124027081, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124027184, "dur":7972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124035227, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124035306, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124035319, "dur":4677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124040070, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124040139, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124040148, "dur":4358, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124044565, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124044641, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124044651, "dur":5055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124049789, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124049867, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124049878, "dur":7030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124057006, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124057082, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124057093, "dur":3072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124060245, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124060334, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124060346, "dur":5705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124066178, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124066298, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124066309, "dur":10493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124076870, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124076969, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124076978, "dur":3232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124080468, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124080583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124080596, "dur":4513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124085176, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124085259, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124085271, "dur":26483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124111837, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124111921, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124111934, "dur":211421, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124323424, "dur":92236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124415666, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124415680, "dur":76197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124491959, "dur":1082, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124493075, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124493089, "dur":2503, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124495683, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124495773, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124495784, "dur":94064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124589922, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124589991, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124590001, "dur":65344, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124655413, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124655489, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124655500, "dur":64127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124719691, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124719752, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124719764, "dur":78592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124798430, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124798506, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124798517, "dur":178986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":8, "ts":1683600124977573, "dur":203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":8, "ts":1683600124977781, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124977860, "dur":1586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":8, "ts":1683600124979522, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":8, "ts":1683600124979700, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124979713, "dur":1811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":8, "ts":1683600124981590, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1683600124981733, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124981745, "dur":4422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1683600124986261, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":8, "ts":1683600124986348, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124986359, "dur":2141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":8, "ts":1683600124988574, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":8, "ts":1683600124988643, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124988654, "dur":1848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":8, "ts":1683600124990587, "dur":1460, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1683600124992053, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124992220, "dur":2242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1683600124994536, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/resources.assets" }}
+,{ "pid":12345, "tid":8, "ts":1683600124994615, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124994624, "dur":1776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/resources.assets" }}
+,{ "pid":12345, "tid":8, "ts":1683600124996473, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/level1" }}
+,{ "pid":12345, "tid":8, "ts":1683600124996543, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124996553, "dur":1996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/level1" }}
+,{ "pid":12345, "tid":8, "ts":1683600124998693, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":8, "ts":1683600124998855, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1683600124998869, "dur":3047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Konstantin/Documents/GitHub/GradProject/Game/GradProject_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":8, "ts":1683600125001988, "dur":268545, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683600125275371, "dur":2866, "ph":"X", "name": "ProfilerWriteOutput" }
+,

@@ -48,11 +48,14 @@ public class UiElementDragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHa
         Destroy(eventData.pointerDrag.gameObject);
         //canvasGroup.alpha = 1f;
         //canvasGroup.blocksRaycasts = true;
+        Ui.instance.UpdateAllWindows();
     }
 
     public void OnDrop(PointerEventData eventData)
     {
         Transform dropppedObject = eventData.pointerDrag.transform;
+        Debug.Log("UiElDragNDrop");
+        Debug.Log(this.transform.parent.name);
         if (eventData.pointerDrag.GetComponent<UiElement>().item == null)
         {
             return;
