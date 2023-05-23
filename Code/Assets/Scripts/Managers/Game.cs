@@ -20,7 +20,12 @@ public class Game : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
-            this.PauseGame();
+            if (this.playing)
+            {
+                this.PauseGame();
+                return;
+            }
+            this.UnPauseGame();
         }
     }
     public void PauseGame()

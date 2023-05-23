@@ -18,6 +18,7 @@ public class LevelSetup : MonoBehaviour
     [Header("World Objects")]
     public GameObject Spawner;
     public GameObject Base;
+    public GameObject Camera;
 
     [Header("Groupings")]
     public GameObject PathNodes;
@@ -89,6 +90,15 @@ public class LevelSetup : MonoBehaviour
         }
         Base.transform.position = new Vector3(basePoint.x * size * 1.5f, Spawner.transform.position.y, -basePoint.z * size * 1.5f);
         Spawner.transform.position = new Vector3(spawnPoint.x * size * 1.5f, Spawner.transform.position.y, -spawnPoint.z * size * 1.5f);
+        PositionCamera(lvl);
+    }
+
+    private void PositionCamera(Level lvl)
+    {
+        string[][] level = lvl.level;
+        float xPos = level.Length * size * (float)1.5;
+        float zPos = level[0].Length * size * (float)1.5;
+        Camera.transform.position = new Vector3(xPos/2, Camera.transform.position.y, zPos/-2 - zPos/10);
     }
 
     public void BuildRandomLevel()
